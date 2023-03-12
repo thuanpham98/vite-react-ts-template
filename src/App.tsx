@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
 
 import './App.css';
 import 'rxjs';
-import { PUBLIC_URL } from './utils/constants';
 
 const SCCmoponent=()=>{
   return (
@@ -75,8 +74,10 @@ function App() {
   useEffect(()=>{
     console.log(import.meta.env.TE_HOST);
   },[]);
+  const a = useId();
   return (
     <div className="App">
+      {a}
       <SelectorCustom/>
       <SCCmoponent/>
     </div>

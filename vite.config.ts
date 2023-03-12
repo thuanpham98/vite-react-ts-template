@@ -44,7 +44,7 @@ export default defineConfig({
       transformMixedEsModules:true,
     },
     outDir: 'dist',
-    assetsDir: "public",
+    assetsDir: "./public/",
     rollupOptions:{
       output:{
         manualChunks:undefined,
@@ -54,6 +54,6 @@ export default defineConfig({
       }
     }
   },
-  publicDir: 'public',
+  publicDir: './src/assets',
   clearScreen:true,
 })
